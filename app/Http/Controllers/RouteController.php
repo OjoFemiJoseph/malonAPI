@@ -35,7 +35,10 @@ class RouteController extends Controller
             ],200);
         }
 
-        return '404';
+        return response()->json([
+            'status_code' => false,
+            'message' => 'error',
+        ],404);
         
     }
 
@@ -53,7 +56,7 @@ class RouteController extends Controller
         }
 
         return response()->json([
-            'status_code' => true,
+            'status_code' => false,
             'message' => 'error',
         ],404);
     }
@@ -72,7 +75,7 @@ class RouteController extends Controller
         }
 
         return response()->json([
-            'status_code' => true,
+            'status_code' => false,
             'message' => 'error',
         ],404);
      
@@ -92,7 +95,7 @@ class RouteController extends Controller
         }
 
         return response()->json([
-            'status_code' => true,
+            'status_code' => false,
             'message' => 'error',
         ],404);
     }
@@ -111,7 +114,7 @@ class RouteController extends Controller
         }
 
         return response()->json([
-            'status_code' => true,
+            'status_code' => false,
             'message' => 'error',
         ],404);
     }

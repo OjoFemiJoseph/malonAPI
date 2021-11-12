@@ -23,7 +23,11 @@ class ApplicationController extends Controller
             'name' => $request->name,
             'cover_letter' => $request->cover_letter,
             'cv_path' => $path
-        ],200);
+        ]);
        
+        return response()->json([
+            'status' => true,
+            'message' => 'application submitted',
+        ],200);
     }
 }

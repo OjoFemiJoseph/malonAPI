@@ -117,7 +117,7 @@ class UserController extends Controller
         }
 
         return response()->json([
-            'status' => true,
+            'status' => false,
             'message' => "cant find the job",
         ],404);
     }
@@ -144,7 +144,7 @@ class UserController extends Controller
         }
 
         return response()->json([
-                'status' => true,
+                'status' => false,
                 'message' => "cant find the job",
             ],404);
     }
