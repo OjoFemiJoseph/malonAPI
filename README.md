@@ -61,12 +61,23 @@
     
 <h4> Create Job/ Store </h4>
 <p>api/user</p> <em> Method : POST <em>
+<p>job_title</p> 
+<p>job_type</p> 
+<p>job_categories</p> 
+<p>work_conditions</p> 
+<p>job_descriptions</p>
+<em> The id for type, category, work_conditions has to exist, a user can't create a job with one that does not exist </em>
     
 <h4> Show specific job </h4>
 <p>api/user/{jobId}</p> <em> Method : GET <em> 
     
 <h4>  Update specific job </h4>
-<p>api/user/{jobId}</p> <em> Method : PUT <em> 
+<p>api/user/{jobId}</p> <em> Method : PUT <em>
+<p>job_title</p> 
+<p>job_type</p> 
+<p>job_categories</p> 
+<p>work_conditions</p> 
+<p>job_descriptions</p> 
     
 <h4>  Delete specific job </h4>
 <p>api/user/{jobId}</p> <em> Method : DELETE <em>  
