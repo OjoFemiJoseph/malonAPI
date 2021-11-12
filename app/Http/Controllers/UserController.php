@@ -128,7 +128,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request,$id)
     {
         $user_id = $request->user()->id;
         $jobs = jobs::where('id', $id)->first();
