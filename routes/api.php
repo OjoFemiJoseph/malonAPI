@@ -32,7 +32,7 @@ Route::prefix('v1')
         Route::get('/jobs/{job}',[RouteController::class, 'viewJob']);
 
         //apply for job
-        Route::get('/jobs/{job}/apply',[ApplicationController::class, 'applyJob']);
+        Route::post('/jobs/{job}/apply',[ApplicationController::class, 'applyJob']);
 
 
         // search for jobs

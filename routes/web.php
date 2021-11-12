@@ -1,6 +1,12 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\{
+    AuthController,
+    UserController,
+    RouteController,
+    ApplicationController};
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +20,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('test');
 });
+
+Route::post('/jobs/1/apply',[ApplicationController::class, 'applyJob'])->name('apply');
+

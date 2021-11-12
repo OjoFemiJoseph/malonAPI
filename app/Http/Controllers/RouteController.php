@@ -16,7 +16,7 @@ class RouteController extends Controller
         $jobs = jobs::paginate(20);
 
         return response()->json([
-            'status_code' => true,
+            'status' => true,
             'data' => $jobs,
         ],200);
     
@@ -52,7 +52,10 @@ class RouteController extends Controller
             ],200);
         }
 
-        return '404';
+        return response()->json([
+            'status_code' => true,
+            'message' => 'error',
+        ],404);
     }
 
     public function searchType(Request $request, $jobType)
@@ -68,7 +71,10 @@ class RouteController extends Controller
             ],200);
         }
 
-        return '404';
+        return response()->json([
+            'status_code' => true,
+            'message' => 'error',
+        ],404);
      
     }
 
@@ -85,7 +91,10 @@ class RouteController extends Controller
             ],200);
         }
 
-        return '404';
+        return response()->json([
+            'status_code' => true,
+            'message' => 'error',
+        ],404);
     }
 
     public function SearchCondition(Request $request, $workConditions)
@@ -101,7 +110,10 @@ class RouteController extends Controller
             ],200);
         }
 
-        return '404';
+        return response()->json([
+            'status_code' => true,
+            'message' => 'error',
+        ],404);
     }
 
 

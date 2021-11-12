@@ -15,8 +15,9 @@ class CreateApplicationsTable extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
-            $table->integer('job_id');
+            $table->string('job_id');
             $table->string('name');
+            $table->text('cover_letter');
             $table->string('cv_path');
             $table->timestamps();
         });

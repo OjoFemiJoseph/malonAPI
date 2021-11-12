@@ -21,6 +21,18 @@
         </style>
     </head>
     <body class="antialiased">
+
+    <form action="{{route('apply')}}" method="POST" enctype="multipart/form-data">
+        @csrf
+        
+        <input type="text" name='name'>
+        <input type="text" name='email'>
+        <input type='text' name='hello'>
+        <input type="text" name='cover_letter'>
+        <input type="file" name='cv'>
+        <input type="text" name='job_id' value='1'>
+        <input type='submit' value="submit">
+    </form>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">

@@ -17,9 +17,9 @@ class CreateJobsTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->string('job_title');
-            $table->foreignId('job_type');
-            $table->foreignId('work_conditions');
-            $table->foreignId('job_categories');
+            $table->string('job_type');
+            $table->string('work_conditions');
+            $table->string('job_categories');
             $table->text('job_descriptions');
             $table->timestamps();
         });
