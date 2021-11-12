@@ -70,7 +70,7 @@ class UserController extends Controller
         $jobs = jobs::where('id', $id)->first();
 
         
-        if($job && $user_id == $jobs->user_id)
+        if($jobs && $user_id == $jobs->user_id)
         {
             return response()->json([
                 'status' => true,
@@ -99,7 +99,7 @@ class UserController extends Controller
         $jobs = jobs::where('id', $id)->first();
 
         
-        if($job && $user_id == $jobs->user_id)
+        if($jobs && $user_id == $jobs->user_id)
         {
             jobs::where('id', $id)->update([
                 'user_id' => $request->user()->id,
@@ -134,7 +134,7 @@ class UserController extends Controller
         $jobs = jobs::where('id', $id)->first();
 
         
-        if($job && $user_id == $jobs->user_id)
+        if($jobs && $user_id == $jobs->user_id)
         {
             $jobs->delete();
             return response()->json([
