@@ -21,27 +21,27 @@
 
 <h4>Login : Method POST </h4>
 
-<p>api/v1/login </p>
+<p>https://malonjobapi.herokuapp.com/api/v1/login </p>
 
 <p>Parameters</p>
 <p>email</p>
 <p>password</p>
 
 <h4>View Jobs : Method GET </h4>
-<p>api/v1/jobs</p>
+<p>https://malonjobapi.herokuapp.com/api/v1/jobs</p>
 
 <h4>View Specific Jobs : Method GET </h4>
 <p>api/v1/jobs/{jobId}</p>
 
 <h4>Search Jobs: Method GET </h4>
-<p>api/v1/jobs/type/{jobTypeId} </p>
-<p>api/v1/jobs/category/{jobCategoryId} </p>
-<p>api/v1/jobs/title/{jobTitle}</p>
-<p>api/v1/jobs/work/{workConditionId}</p>
+<p>https://malonjobapi.herokuapp.com/api/v1/jobs/type/{jobTypeId} </p>
+<p>https://malonjobapi.herokuapp.com/api/v1/jobs/category/{jobCategoryId} </p>
+<p>https://malonjobapi.herokuapp.com/api/v1/jobs/title/{jobTitle}</p>
+<p>https://malonjobapi.herokuapp.com/api/v1/jobs/work/{workConditionId}</p>
 
 
 <h4>Apply for specific Jobs : Method POST </h4>
-<p>api/v1/jobs/{jobId}/apply</p> 
+<p>https://malonjobapi.herokuapp.com/api/v1/jobs/{jobId}/apply</p> 
 
 <p>Parameters </p>
 <p>job_id</p>
@@ -57,10 +57,10 @@
 <p> Bearer Token : token </p>
    
 <h4>View signed in business jobs listings </h4>
-<p>api/user</p> <em> Method : GET <em>
+<p>https://malonjobapi.herokuapp.com/api/user</p> <em> Method : GET <em>
     
 <h4> Create Job/ Store </h4>
-<p>api/user</p> <em> Method : POST <em>
+<p>https://malonjobapi.herokuapp.com/api/user</p> <em> Method : POST <em>
 <p>job_title</p> 
 <p>job_type</p> 
 <p>job_categories</p> 
@@ -69,10 +69,10 @@
 <em> The id for type, category, work_conditions has to exist, a user can't create a job with one that does not exist </em>
     
 <h4> Show specific job </h4>
-<p>api/user/{jobId}</p> <em> Method : GET <em> 
+<p>https://malonjobapi.herokuapp.com/api/user/{jobId}</p> <em> Method : GET <em> 
     
 <h4>  Update specific job </h4>
-<p>api/user/{jobId}</p> <em> Method : PUT <em>
+<p>https://malonjobapi.herokuapp.com/api/user/{jobId}</p> <em> Method : PUT <em>
 <p>job_title</p> 
 <p>job_type</p> 
 <p>job_categories</p> 
@@ -80,7 +80,7 @@
 <p>job_descriptions</p> 
     
 <h4>  Delete specific job </h4>
-<p>api/user/{jobId}</p> <em> Method : DELETE <em>  
+<p>https://malonjobapi.herokuapp.com/api/user/{jobId}</p> <em> Method : DELETE <em>  
     
 
 
